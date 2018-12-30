@@ -38,7 +38,7 @@ const run = (paths, {
     plugins: _babelConfig.default.plugins
   } : _babelConfig.default;
 
-  require("babel-register")(finalBabelConfig);
+  require("@babel/register")(finalBabelConfig);
 
   let hasErrors = false;
   let lastHasError = false;
